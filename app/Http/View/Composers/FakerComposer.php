@@ -11,7 +11,7 @@ class FakerComposer
         $users = collect([
             [ 'name' => 'Johnny Depp', 'gender' => 'male' ],
             [ 'name' => 'Al Pacino', 'gender' => 'male' ],
-            [ 'name' => 'Devi Willieam Anggara', 'gender' => 'male' ],
+            [ 'name' => 'Robert De Niro', 'gender' => 'male' ],
             [ 'name' => 'Kevin Spacey', 'gender' => 'male' ],
             [ 'name' => 'Denzel Washington', 'gender' => 'male' ],
             [ 'name' => 'Russell Crowe', 'gender' => 'male' ],
