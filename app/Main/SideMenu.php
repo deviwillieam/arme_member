@@ -61,7 +61,7 @@ class SideMenu
                         'params' => [
                             'layout' => 'side-menu',
                         ],
-                        'title' => 'Sokongan Politik Wanita-Kerajaan Negeri Selangor'
+                        'title' => 'Statistik'
                     ],
                     'categories' => [
                         'icon' => '',
@@ -69,7 +69,7 @@ class SideMenu
                         'params' => [
                             'layout' => 'side-menu',
                         ],
-                        'title' => 'Oke Cun'
+                        'title' => 'test-menu'
                     ]
                 ]
             ]
