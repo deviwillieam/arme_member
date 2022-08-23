@@ -26,12 +26,13 @@ width: 100%;
 height: 100%;
 }</style>
 
-<!-- 
-<div id="Container"
-     style="padding-bottom:56.25%; position:relative; display:block; width: 100%">
-    
-<iframe title="Analisis Data Selangor - Page 1" width="1024" height="1060" src="" frameborder="0" allowFullScreen="true"></iframe>
-   -->
+<script>
+   setTimeout(function () {
+   var iframe = document.getElementById('yourIFrameId');
+   var url = iframe.src;
+   iframe.src = url;
+}, 60 * 1000);
+</script>
  <div class="embed-container">
 <iframe src="https://app.powerbi.com/view?r=eyJrIjoiY2MyYmZiMDItYmE1Yi00ZmIxLThmMGUtNDIyYmJjNjE0Y2Y1IiwidCI6IjBlMGRiMmFkLWM0MTYtNDdjNy04OGVjLWNlYWM0ZWU3Njc2NyIsImMiOjEwfQ%3D%3D&pageName=ReportSection" frameborder="0" allowfullscreen="" webkitallowfullscreen="true" mozallowfullscreen="true" oallowfullscreen="true" msallowfullscreen="true"></iframe>
 </div>
