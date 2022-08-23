@@ -51,6 +51,20 @@ class SideMenu
                     ]
                 ]
             ],
+            'tambah' => [
+                'icon' => 'home',
+                'title' => 'tambah',
+                'sub_menu' => [
+                    'dashboard-tambah' => [
+                        'icon' => '',
+                        'route_name' => 'dashboard-tambah',
+                        'params' => [
+                            'layout' => 'side-menu',
+                        ],
+                        'title' => 'Tambah'
+                    ]
+                ]
+            ],
             'menu-layout' => [
                 'icon' => 'box',
                 'title' => 'Menu Layout',

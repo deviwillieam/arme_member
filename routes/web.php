@@ -32,6 +32,7 @@ Route::middleware('auth')->group(function() {
         Route::get('dashboard-overview-2-page', 'dashboardOverview2')->name('dashboard-overview-2');
         Route::get('dashboard-overview-3-page', 'dashboardOverview3')->name('dashboard-overview-3');
         Route::get('dashboard-overview-4-page', 'dashboardOverview4')->name('dashboard-overview-4');
+        Route::get('tambah-page', 'tambah')->name('dashboard-tambah');
         Route::get('categories-page', 'categories')->name('categories');
         Route::get('add-product-page', 'addProduct')->name('add-product');
         Route::get('product-list-page', 'productList')->name('product-list');

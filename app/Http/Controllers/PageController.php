@@ -23,6 +23,18 @@ class PageController extends Controller
         ]);
     }
 
+    public function tambah()
+    {
+        return view('pages/dashboard-tambah', [
+            // Specify the base layout.
+            // Eg: 'side-menu', 'simple-menu', 'top-menu', 'login'
+            // The default value is 'side-menu'
+
+            // 'layout' => 'side-menu'
+        ]);
+    }
+
+
     /**
      * Show specified view.
      *
