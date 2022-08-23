@@ -35,4 +35,6 @@ height: 100%;
 <iframe src="" frameborder="0" allowfullscreen="" webkitallowfullscreen="true" mozallowfullscreen="true" oallowfullscreen="true" msallowfullscreen="true"></iframe>
 </div> -->
 
+<iframe title="Analisis Data Selangor - Page 1" width="1024" height="1060" src="https://app.powerbi.com/view?r=eyJrIjoiY2MyYmZiMDItYmE1Yi00ZmIxLThmMGUtNDIyYmJjNjE0Y2Y1IiwidCI6IjBlMGRiMmFkLWM0MTYtNDdjNy04OGVjLWNlYWM0ZWU3Njc2NyIsImMiOjEwfQ%3D%3D" frameborder="0" allowFullScreen="true"></iframe>
+
 @endsection
