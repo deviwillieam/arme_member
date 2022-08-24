@@ -24,7 +24,7 @@ class SideMenu
                         'params' => [
                             'layout' => 'side-menu',
                         ],
-                        'title' => 'Dashboard 1'
+                        'title' => 'Dashboard'
                 //     ],
                 //     'dashboard-overview-2' => [
                 //         'icon' => '',
