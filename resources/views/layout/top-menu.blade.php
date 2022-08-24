@@ -11,7 +11,7 @@
         <div class="top-bar-boxed flex items-center">
             <!-- BEGIN: Logo -->
             <a href="" class="-intro-x hidden md:flex">
-                <img alt="Midone - HTML Admin Template" class="w-6" src="{{ asset('dist/images/logo.svg') }}">
+                <img alt="Midone - HTML Admin Template" class="w-6" src="{{ asset('dist/images/main_logo.png') }}">
                 <span class="text-white text-lg ml-3">
                     Rubick
                 </span>

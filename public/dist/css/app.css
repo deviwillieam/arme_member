@@ -9941,7 +9941,7 @@ body.tabulator-print-fullscreen-hide > *:not(.tabulator-print-fullscreen) {
  */
 html{
     --tw-bg-opacity: 1;
-    background-color: rgb(var(--color-primary) / var(--tw-bg-opacity));
+    background-color: #e20010;
 }
 html.dark{
     --tw-bg-opacity: 1;
@@ -10002,6 +10002,7 @@ html body{
     .login{
         --tw-bg-opacity: 1;
         background-color: rgb(var(--color-primary) / var(--tw-bg-opacity));
+           
     }
     .dark .login{
         --tw-bg-opacity: 1;
@@ -10046,7 +10047,8 @@ html body{
         transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
         border-radius: 100%;
         --tw-bg-opacity: 1;
-        background-color: rgb(var(--color-primary) / var(--tw-bg-opacity));
+        /* background-color: rgb(var(--color-primary) / var(--tw-bg-opacity)); */
+        background-color: #e20010;
     }
 .dark .login:after{
     --tw-bg-opacity: 1;
