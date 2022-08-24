@@ -157,7 +157,7 @@ height: 100%;
 <div class="embed-container">
 <div id="content">
     <div style="height:580px;width:960px">
-      <iframe width="1920" height="1080" src="https://app.powerbi.com/view?r=eyJrIjoiM2M1NmMyOTQtOGE1ZS00MjE4LWEwNzUtN2MyZWE4NWFiZjcwIiwidCI6IjBlMGRiMmFkLWM0MTYtNDdjNy04OGVjLWNlYWM0ZWU3Njc2NyIsImMiOjEwfQ%3D%3D" frameborder="0" height="100%" width="100%" style="position:absolute; clip:rect(0px,1920px,820px,0px);
+      <iframe width="1920" height="1080" src="https://app.powerbi.com/view?r=eyJrIjoiM2M1NmMyOTQtOGE1ZS00MjE4LWEwNzUtN2MyZWE4NWFiZjcwIiwidCI6IjBlMGRiMmFkLWM0MTYtNDdjNy04OGVjLWNlYWM0ZWU3Njc2NyIsImMiOjEwfQ%3D%3D" frameborder="0" height="100%" width="100%" style="position:absolute; clip:rect(0px,1920px,810px,0px);
             bottom:-0px; allowFullScreen="true" ></iframe>
    </div>
 </div>
