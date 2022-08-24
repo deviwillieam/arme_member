@@ -35,6 +35,52 @@ class PageController extends Controller
     }
 
 
+    public function tambah2()
+    {
+        return view('pages/dashboard-tambah2', [
+            // Specify the base layout.
+            // Eg: 'side-menu', 'simple-menu', 'top-menu', 'login'
+            // The default value is 'side-menu'
+
+            // 'layout' => 'side-menu'
+        ]);
+    }
+
+    public function tambah3()
+    {
+        return view('pages/dashboard-tambah3', [
+            // Specify the base layout.
+            // Eg: 'side-menu', 'simple-menu', 'top-menu', 'login'
+            // The default value is 'side-menu'
+
+            // 'layout' => 'side-menu'
+        ]);
+    }
+
+    public function tambah4()
+    {
+        return view('pages/dashboard-tambah4', [
+            // Specify the base layout.
+            // Eg: 'side-menu', 'simple-menu', 'top-menu', 'login'
+            // The default value is 'side-menu'
+
+            // 'layout' => 'side-menu'
+        ]);
+    }
+
+    
+    public function tambah5()
+    {
+        return view('pages/dashboard-tambah5', [
+            // Specify the base layout.
+            // Eg: 'side-menu', 'simple-menu', 'top-menu', 'login'
+            // The default value is 'side-menu'
+
+            // 'layout' => 'side-menu'
+        ]);
+    }
+
+
     /**
      * Show specified view.
      *

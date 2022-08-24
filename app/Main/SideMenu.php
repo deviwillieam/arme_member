@@ -59,7 +59,45 @@ class SideMenu
                     'layout' => 'side-menu'
                 ],
                 'title' => 'Senarai Daftar Pemilih'
-            ]
+            ],
+
+            'tambah2' => [
+                'icon' => 'shopping-bag',
+                'route_name' => 'dashboard-tambah2',
+                'params' => [
+                    'layout' => 'side-menu'
+                ],
+                'title' => 'Senarai Daftar Penerima Bantuan'
+            ],
+
+            'tambah3' => [
+                'icon' => 'person-standing',
+                'route_name' => 'dashboard-tambah3',
+                'params' => [
+                    'layout' => 'side-menu'
+                ],
+                'title' => 'Maklumat Pribadi Pengundi'
+            ],
+
+            'tambah4' => [
+                'icon' => 'globe',
+                'route_name' => 'dashboard-tambah4',
+                'params' => [
+                    'layout' => 'side-menu'
+                ],
+                'title' => 'Analisis Mengikut Pusat Daerah Pengundi'
+            ],
+
+            'tambah5' => [
+                'icon' => 'file-plus',
+                'route_name' => 'dashboard-tambah5',
+                'params' => [
+                    'layout' => 'side-menu'
+                ],
+                'title' => 'Tambah Data'
+            ],
+
+
             // 'tambah' => [
             //     'icon' => 'home',
             //     'title' => 'Statistic',
