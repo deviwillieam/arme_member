@@ -13,66 +13,76 @@ class SideMenu
     public static function menu()
     {
         return [
+
             'dashboard' => [
                 'icon' => 'home',
                 'title' => 'Dashboard',
-                'sub_menu' => [
-                    'dashboard-overview-1' => [
-                        'icon' => '',
+                // 'sub_menu' => [
+                //     'dashboard-overview-1' => [
+                //         'icon' => '',
                         'route_name' => 'dashboard-overview-1',
                         'params' => [
                             'layout' => 'side-menu',
                         ],
-                        'title' => 'Overview 1'
-                    ],
-                    'dashboard-overview-2' => [
-                        'icon' => '',
-                        'route_name' => 'dashboard-overview-2',
-                        'params' => [
-                            'layout' => 'side-menu',
-                        ],
-                        'title' => 'Overview 2'
-                    ],
-                    'dashboard-overview-3' => [
-                        'icon' => '',
-                        'route_name' => 'dashboard-overview-3',
-                        'params' => [
-                            'layout' => 'side-menu',
-                        ],
-                        'title' => 'Overview 3'
-                    ],
-                    'dashboard-overview-4' => [
-                        'icon' => '',
-                        'route_name' => 'dashboard-overview-4',
-                        'params' => [
-                            'layout' => 'side-menu',
-                        ],
-                        'title' => 'Overview 4'
-                    ]
-                ]
+                        'title' => 'Dashboard 1'
+                //     ],
+                //     'dashboard-overview-2' => [
+                //         'icon' => '',
+                //         'route_name' => 'dashboard-overview-2',
+                //         'params' => [
+                //             'layout' => 'side-menu',
+                //         ],
+                //         'title' => 'Overview 2'
+                //     ],
+                //     'dashboard-overview-3' => [
+                //         'icon' => '',
+                //         'route_name' => 'dashboard-overview-3',
+                //         'params' => [
+                //             'layout' => 'side-menu',
+                //         ],
+                //         'title' => 'Overview 3'
+                //     ],
+                //     'dashboard-overview-4' => [
+                //         'icon' => '',
+                //         'route_name' => 'dashboard-overview-4',
+                //         'params' => [
+                //             'layout' => 'side-menu',
+                //         ],
+                //         'title' => 'Overview 4'
+                //     ]
+                // ]
             ],
             'tambah' => [
-                'icon' => 'home',
-                'title' => 'Statistic',
-                'sub_menu' => [
-                    'dashboard-tambah' => [
-                        'icon' => '',
-                        'route_name' => 'dashboard-tambah',
-                        'params' => [
-                            'layout' => 'side-menu',
-                        ],
-                        'title' => 'Statistik'
-                    ],
-                    'categories' => [
-                        'icon' => '',
-                        'route_name' => 'categories',
-                        'params' => [
-                            'layout' => 'side-menu',
-                        ],
-                        'title' => 'test-menu'
-                    ]
-                ]
+                'icon' => 'users',
+                'route_name' => 'dashboard-tambah',
+                'params' => [
+                    'layout' => 'side-menu'
+                ],
+                'title' => 'Senarai Daftar Pemilih'
             ]
+            // 'tambah' => [
+            //     'icon' => 'home',
+            //     'title' => 'Statistic',
+            //     'sub_menu' => [
+            //         'dashboard-tambah' => [
+            //             'icon' => '',
+            //             'route_name' => 'dashboard-tambah',
+            //             'params' => [
+            //                 'layout' => 'side-menu',
+            //             ],
+            //             'title' => 'Statistik'
+            //         ],
+            //         'categories' => [
+            //             'icon' => '',
+            //             'route_name' => 'categories',
+            //             'params' => [
+            //                 'layout' => 'side-menu',
+            //             ],
+            //             'title' => 'test-menu'
+            //         ]
+            //         ]
+            //         ],
+                 
             // 'menu-layout' => [
             //     'icon' => 'box',
             //     'title' => 'Menu Layout',
