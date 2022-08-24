@@ -10,7 +10,7 @@
         <!-- BEGIN: Side Menu -->
         <nav class="side-nav">
             <a href="" class="intro-x flex items-center pl-5 pt-4">
-            <img alt="Midone - HTML Admin Template" class="w-6" src="http://127.0.0.1:8000/dist/images/main_logo.png" style="width: 100px;">
+            <img alt="Midone - HTML Admin Template" class="w-6" src="{{ asset('dist/images/main_logo.png') }}" style="width: 100px;">
             </a>
             <div class="side-nav__devider my-6"></div>
             <ul>

@@ -11,7 +11,7 @@
             <div class="hidden xl:flex flex-col min-h-screen">
                 <a href="" class="-intro-x flex items-center pt-5">
                     <!-- <img alt="Midone - HTML Admin Template" class="w-6" src="{{ asset('dist/images/main_logo.png') }}"> -->
-                    <img alt="Midone - HTML Admin Template" class="w-6" src="http://127.0.0.1:8000/dist/images/main_logo.png" style="width: 100px;">
+                    <img alt="Midone - HTML Admin Template" class="w-6" src="{{ asset('dist/images/main_logo.png') }}" style="width: 100px;">
                     
                 </a>
                 <div class="my-auto">
