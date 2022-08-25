@@ -5,6 +5,15 @@
 @endsection
 
 @section('subcontent')
+
+<button id="btn-login" class="btn btn-danger py-3 "  onclick=" window.open('https://mysprsemak.spr.gov.my/semakan/daftarPemilih', '_blank'); return false;">Semakan Daftar Pemilih</button>
+<button id="btn-login" class="btn btn-danger py-3 "  onclick=" window.open('https://mysprsemak.spr.gov.my/semakan/calon', '_blank'); return false;">Semakan Calon Pilihan Raya</button>
+<button id="btn-login" class="btn btn-danger py-3 "  onclick=" window.open('https://mysprsemak.spr.gov.my/semakan/keputusan', '_blank'); return false;">Semakan Keputusan pilihan Raya</button>
+
+
+<p>
+
+
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <style>
 .fa {
@@ -154,7 +163,7 @@ height: 100%;
  <!-- <div class="embed-container">
 <iframe src="https://app.powerbi.com/view?r=eyJrIjoiM2M1NmMyOTQtOGE1ZS00MjE4LWEwNzUtN2MyZWE4NWFiZjcwIiwidCI6IjBlMGRiMmFkLWM0MTYtNDdjNy04OGVjLWNlYWM0ZWU3Njc2NyIsImMiOjEwfQ%3D%3D" frameborder="0" allowfullscreen="" webkitallowfullscreen="true" mozallowfullscreen="true" oallowfullscreen="true" msallowfullscreen="true"></iframe>
 </div> -->
-
+<br>
 <div class="embed-container">
 <div id="content">
     <div style="height:580px;width:960px">

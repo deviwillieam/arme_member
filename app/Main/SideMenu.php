@@ -61,6 +61,7 @@ class SideMenu
                 ],
                 'title' => 'Data Pilihan Raya Umum'
             ],
+            
 
             //  'data_pru' => [
             //     'icon' => 'layers',
