@@ -23,6 +23,51 @@ class PageController extends Controller
         ]);
     }
 
+
+    public function data_pru()
+    {
+        return view('pages/dashboard-data-pru', [
+            // Specify the base layout.
+            // Eg: 'side-menu', 'simple-menu', 'top-menu', 'login'
+            // The default value is 'side-menu'
+
+            // 'layout' => 'side-menu'
+        ]);
+    }
+
+    public function daftar_pemilih()
+    {
+        return view('pages/dashboard-daftar-pemilih', [
+            // Specify the base layout.
+            // Eg: 'side-menu', 'simple-menu', 'top-menu', 'login'
+            // The default value is 'side-menu'
+
+            // 'layout' => 'side-menu'
+        ]);
+    }
+
+    public function calon_pilihan_raya()
+    {
+        return view('pages/dashboard-cpr', [
+            // Specify the base layout.
+            // Eg: 'side-menu', 'simple-menu', 'top-menu', 'login'
+            // The default value is 'side-menu'
+
+            // 'layout' => 'side-menu'
+        ]);
+    }
+
+    public function keputusan_pilihan_raya()
+    {
+        return view('pages/dashboard-keputusan-pr', [
+            // Specify the base layout.
+            // Eg: 'side-menu', 'simple-menu', 'top-menu', 'login'
+            // The default value is 'side-menu'
+
+            // 'layout' => 'side-menu'
+        ]);
+    }
+
     public function tambah()
     {
         return view('pages/dashboard-tambah', [

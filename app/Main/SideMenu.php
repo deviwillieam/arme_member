@@ -52,6 +52,57 @@ class SideMenu
                 //     ]
                 // ]
             ],
+
+            'data_pru' => [
+                'icon' => 'layers',
+                'route_name' => 'dashboard-data-pru',
+                'params' => [
+                    'layout' => 'side-menu'
+                ],
+                'title' => 'Data Pilihan Raya Umum'
+            ],
+
+            //  'data_pru' => [
+            //     'icon' => 'layers',
+            //     'title' => 'Data Pilihan Raya Umum',
+            //     'sub_menu' => [
+            //         'dashboard-tambah' => [
+            //             'icon' => '',
+            //             'route_name' => 'dashboard-data-pru',
+            //             'params' => [
+            //                 'layout' => 'side-menu',
+            //             ],
+            //             'title' => 'DASHBOARD SPR'
+            //         ],
+            //         'daftar_pemilih' => [
+            //             'icon' => '',
+            //             'route_name' => 'dashboard-daftar-pemilih',
+            //             'params' => [
+            //                 'layout' => 'side-menu',
+            //             ],
+            //             'title' => 'Semakan Daftar Pemilih'
+            //         ],
+            //         'calon_pilihan_raya' => [
+            //             'icon' => '',
+            //             'route_name' => 'dashboard-cpr',
+            //             'params' => [
+            //                 'layout' => 'side-menu',
+            //             ],
+            //             'title' => 'Semakan Calon Pilihan Raya'
+            //         ],
+            //         'keputusan_pilihan_raya' => [
+            //             'icon' => '',
+            //             'route_name' => 'dashboard-keputusan-pr',
+            //             'params' => [
+            //                 'layout' => 'side-menu',
+            //             ],
+            //             'title' => 'Semakan Keputusan Pilihan Raya'
+            //         ]
+            //         ]
+            //         ],
+
+            
+
             'tambah' => [
                 'icon' => 'users',
                 'route_name' => 'dashboard-tambah',

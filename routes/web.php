@@ -32,6 +32,10 @@ Route::middleware('auth')->group(function() {
         Route::get('dashboard-overview-2-page', 'dashboardOverview2')->name('dashboard-overview-2');
         Route::get('dashboard-overview-3-page', 'dashboardOverview3')->name('dashboard-overview-3');
         Route::get('dashboard-overview-4-page', 'dashboardOverview4')->name('dashboard-overview-4');
+        Route::get('data-pru-page', 'data_pru')->name('dashboard-data-pru');
+        Route::get('data-dp-page', 'daftar_pemilih')->name('dashboard-daftar-pemilih');
+        Route::get('data-cpr-page', 'calon_pilihan_raya')->name('dashboard-cpr');
+        Route::get('data-kpr-page', 'keputusan_pilihan_raya')->name('dashboard-keputusan-pr');
         Route::get('tambah-page', 'tambah')->name('dashboard-tambah');
         Route::get('tambah-page2', 'tambah2')->name('dashboard-tambah2');
         Route::get('tambah-page3', 'tambah3')->name('dashboard-tambah3');
