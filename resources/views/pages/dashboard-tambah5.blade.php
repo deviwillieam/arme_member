@@ -45,7 +45,7 @@
   navigator.clipboard.writeText(copyText.value);
 
   /* Alert the copied text */
-  alert("Copied the text: " + copyText.value);
+  alert("form link dicopy");
 }
     </script>
 <input type="text" value="https://forms.gle/RW8aDKkRHhJTE97b8" id="myInput">
