@@ -6,4 +6,4 @@
 
 @section('subcontent')
 No Data
-@ensdesction
+@endsection
