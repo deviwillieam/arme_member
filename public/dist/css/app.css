@@ -15481,7 +15481,7 @@ html body{
     width: 100%;
     border-bottom-width: 1px;
     border-color: rgb(255 255 255 / 0.08);
-    background-color: #18222e;
+    background-color: #e20010;
 }
 .dark .mobile-menu{
     background-color: rgb(var(--color-darkmode-800) / 0.9);
