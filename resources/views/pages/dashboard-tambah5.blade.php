@@ -32,7 +32,7 @@
   32 </div> -->
 
   <!-- The text field -->
-<input type="text" value="https://docs.google.com/forms/d/e/1FAIpQLSdfRG3KN1TwwhHthBei7PAX5DgLIg9nHUXuXOyio5T8YPt0sw/viewform?embedded=true" id="myInput">
+<input type="text" value="https://forms.gle/RW8aDKkRHhJTE97b8" id="myInput">
 
 <!-- The button used to copy the text -->
 <button onclick="myFunction()">Copy form link</button>
