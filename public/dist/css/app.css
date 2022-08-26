@@ -15481,7 +15481,7 @@ html body{
     width: 100%;
     border-bottom-width: 1px;
     border-color: rgb(255 255 255 / 0.08);
-    background-color: rgb(var(--color-primary) / 0.9);
+    background-color: #e20010;
 }
 .dark .mobile-menu{
     background-color: rgb(var(--color-darkmode-800) / 0.9);
@@ -15541,7 +15541,7 @@ html body{
     height: 100vh;
     width: 270px;
     --tw-bg-opacity: 1;
-    background-color: rgb(var(--color-primary) / var(--tw-bg-opacity));
+    background-color: #e20010;
     transition-property: all;
     transition-duration: 300ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
