@@ -10001,7 +10001,8 @@ html body{
 @media (max-width: calc(1280px - 1px)) {
     .login{
         --tw-bg-opacity: 1;
-        background-color: rgb(var(--color-primary) / var(--tw-bg-opacity));
+        /* background-color: rgb(var(--color-primary) / var(--tw-bg-opacity)); */
+        background-color: #e20010;
     }
     .dark .login{
         --tw-bg-opacity: 1;
