@@ -36,11 +36,11 @@ Route::middleware('auth')->group(function() {
         Route::get('data-dp-page', 'daftar_pemilih')->name('dashboard-daftar-pemilih');
         Route::get('data-cpr-page', 'calon_pilihan_raya')->name('dashboard-cpr');
         Route::get('data-kpr-page', 'keputusan_pilihan_raya')->name('dashboard-keputusan-pr');
-        Route::get('tambah-page', 'tambah')->name('dashboard-tambah');
-        Route::get('tambah-page2', 'tambah2')->name('dashboard-tambah2');
-        Route::get('tambah-page3', 'tambah3')->name('dashboard-tambah3');
-        Route::get('tambah-page4', 'tambah4')->name('dashboard-tambah4');
-        Route::get('tambah-page5', 'tambah5')->name('dashboard-tambah5');
+        Route::get('daftar-pemilih', 'tambah')->name('dashboard-tambah');
+        Route::get('daftar-penerima-bantuan', 'tambah2')->name('dashboard-tambah2');
+        Route::get('maklumat-pribadi-pengundi', 'tambah3')->name('dashboard-tambah3');
+        Route::get('pusat-daerahpengundi', 'tambah4')->name('dashboard-tambah4');
+        Route::get('form', 'tambah5')->name('dashboard-tambah5');
         Route::get('categories-page', 'categories')->name('categories');
         Route::get('add-product-page', 'addProduct')->name('add-product');
         Route::get('product-list-page', 'productList')->name('product-list');
