@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\SheetDBController;
 use App\Http\Controllers\AuthController;
 use App\Http\Controllers\PageController;
 use App\Http\Controllers\DarkModeController;
@@ -25,9 +26,12 @@ Route::controller(AuthController::class)->middleware('loggedin')->group(function
     Route::post('login', 'login')->name('login.check');
 });
 
+Route::get('forms', [SheetDBController::class, 'getfromSheet']);
+
 Route::middleware('auth')->group(function() {
     Route::get('logout', [AuthController::class, 'logout'])->name('logout');
     Route::controller(PageController::class)->group(function() {
+
         Route::get('/', 'dashboardOverview1')->name('dashboard-overview-1');
         Route::get('dashboard-overview-2-page', 'dashboardOverview2')->name('dashboard-overview-2');
         Route::get('dashboard-overview-3-page', 'dashboardOverview3')->name('dashboard-overview-3');
@@ -41,6 +45,7 @@ Route::middleware('auth')->group(function() {
         Route::get('maklumat-pribadi-pengundi', 'tambah3')->name('dashboard-tambah3');
         Route::get('pusat-daerahpengundi', 'tambah4')->name('dashboard-tambah4');
         Route::get('form', 'tambah5')->name('dashboard-tambah5');
+
         Route::get('categories-page', 'categories')->name('categories');
         Route::get('add-product-page', 'addProduct')->name('add-product');
         Route::get('product-list-page', 'productList')->name('product-list');
