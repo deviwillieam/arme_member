@@ -77,6 +77,9 @@
 </script>
 
 
+
+
+
   <marquee direction="right" 
           behavior="alternate" 
         style="border:Red 1px SOLID">
@@ -101,31 +104,44 @@
     <div class="row">
         <div class="col-md-4 col-md-offset-6">
         <!-- BEGIN: Balloon Block Editor -->
+        <div class="container mt-4">
+  @if(session('status'))
+    <div class="alert alert-success">
+        {{ session('status') }}
+    </div>
+  @endif
+
         <div class="intro-y box">
                 <div class="flex flex-col sm:flex-row items-center p-5 border-b border-slate-200/60 dark:border-darkmode-400">
                     <h2 class="font-medium text-base mr-auto">Form</h2>
                 </div>
                 <div id="input" class="p-5">
-                                    
+                                    <form name="form" id="sheetdb-form" method="post" action="https://sheetdb.io/api/v1/x2ucdyu6z03a7">
+                                        
+ 
+                                      
+                                        
+                                        <input id="demo" type="hidden" name="data[Timestamp]" value="d" >
+                                       
                                         <div>
                                             <label for="regular-form-1" class="form-label">Nama Penuh</label>
-                                            <input id="regular-form-1" type="text" class="form-control" placeholder="Input text">
+                                            <input id="Nama Penuh" name="data[Nama Penuh]" type="text" class="form-control" placeholder="Input text" required>
                                         </div><br>
                                         <div>
                                             <label for="regular-form-1" class="form-label">No Kad Pengenalan</label>
-                                            <input id="regular-form-1" type="text" class="form-control" placeholder="Input text">
+                                            <input id="regular-form-1" name="data[No Kad Pengenalan]" type="text" class="form-control" placeholder="Input text"required>
                                         </div><br>
                                         <div>
                                             <label for="regular-form-1" class="form-label">No Handphone</label>
-                                            <input id="regular-form-1" type="text" class="form-control" placeholder="Input text">
+                                            <input id="regular-form-1" name="data[No Handphone]" type="text" class="form-control" placeholder="Input text"required>
                                         </div><br>
                                         <div>
                                             <label for="regular-form-1" class="form-label">Alamat</label>
-                                            <input id="regular-form-1" type="text" class="form-control" placeholder="Input text">
+                                            <input id="regular-form-1" name="data[Alamat]" type="text" class="form-control" placeholder="Input text"required>
                                         </div><br>
                                         <div>
                                             <label for="regular-form-1" class="form-label">DUN</label>
-                                            <select class="form-select mt-2 sm:mr-2" aria-label="Default select example">
+                                            <select class="form-select mt-2 sm:mr-2" name="data[DUN]" aria-label="Default select example"required>
                                               <option>A</option>
                                               <option>B</option>
                                               <option>C</option>
@@ -136,7 +152,7 @@
                                         </div><br>
                                         <div>
                                             <label for="regular-form-1" class="form-label">Pusat Daerah Mengundi</label>
-                                            <select class="form-select mt-2 sm:mr-2" aria-label="Default select example">
+                                            <select class="form-select mt-2 sm:mr-2" name="data[Pusat Daerah Mengundi]" aria-label="Default select example" required>
                                               <option>PDM1 </option>
                                               <option>PDM2 </option>
                                               <option>PDM3 </option>
@@ -144,7 +160,7 @@
                                         </div><br>
                                         <div>
                                             <label for="regular-form-1" class="form-label">Culaan</label>
-                                            <select class="form-select mt-2 sm:mr-2" aria-label="Default select example">
+                                            <select class="form-select mt-2 sm:mr-2" name="data[Culaan]" aria-label="Default select example" required>
                                               <option>Candidate A </option>
                                               <option>Candidate B</option>
                                               <option>Candidate C</option>
@@ -154,29 +170,54 @@
                                         </div><br>
                                         <div>
                                             <label for="regular-form-1" class="form-label">Sokongan</label>
-                                            <select id="sokongan" class="form-select mt-2 sm:mr-2" aria-label="Default select example" onchange="checkAnswer(this)">
+                                            <select id="sokongan" name="data[Sokongan]" class="form-select mt-2 sm:mr-2" aria-label="Default select example" onchange="checkAnswer(this)" required>
                                               <option value="">Pilih</option>
                                               <option value="Menyokong Parti Bersatu">Menyokong Parti Bersatu</option>
                                               <option value="Tidak Menyokong">Tidak Menyokong</option>
                                             </select>
                                         </div><br>
-                                        <div id="code" class="d-none">
-                                            <label for="regular-form-1" class="form-label">Alasan tidak menyokong Parti Bersatu</label>
-                                            <input id="regular-form-1" type="text" class="form-control" placeholder="Input text">
-                                        </div><br>
                                         <div id="code2" class="d-none2">
                                             <label for="regular-form-1" class="form-label">Harapan untuk kemajuan bangsa dan negara melaui Parti Bersatu</label>
-                                            <input id="regular-form-1" type="text" class="form-control" placeholder="Input text">
+                                            <input id="regular-form-1" name="data[Isi Harapan ]" type="text" class="form-control" placeholder="Input text">
                                         </div><br>
-                                        <button class="btn btn-primary mt-5">Submit</button>
+                                        <div id="code" class="d-none">
+                                            <label for="regular-form-1" class="form-label">Alasan tidak menyokong Parti Bersatu</label>
+                                            <input id="regular-form-1" name="data[Beri Alasan]" type="text" class="form-control" placeholder="Input text">
+                                        </div><br>
+                                        <button onclick="getDate()"class="btn btn-primary mt-5">Submit</button>
+                                      </form>
                                     
                                 
         <!-- END: Balloon Block Editor -->
     </div>
     </div>
-                                    
+                            
+   
+<script>
+  var form = document.getElementById('sheetdb-form');
+  form.addEventListener("submit", e => {
+    e.preventDefault();
+    fetch(form.action, {
+        method : "POST",
+        body: new FormData(document.getElementById("sheetdb-form")),
+    }).then(
+        response => response.json()
+    ).then((html) => {
+      // you can put any JS code here
+      window.location.href = 'https://login.armestudio.co.id';
+    });
+  });
+</script>
                                 
   
+<script>
+  function getDate() {
+ const d = new Date();
+document.getElementById("demo").innerHTML = d;
+document.getElementById("demo").value = d;
+}
+</script>
+
   
   
   

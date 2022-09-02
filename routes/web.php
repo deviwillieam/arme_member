@@ -27,6 +27,7 @@ Route::controller(AuthController::class)->middleware('loggedin')->group(function
 });
 
 Route::get('forms', [SheetDBController::class, 'getfromSheet']);
+Route::post('submit-forms', [SheetDBController::class, 'submit_form']);
 
 Route::middleware('auth')->group(function() {
     Route::get('logout', [AuthController::class, 'logout'])->name('logout');

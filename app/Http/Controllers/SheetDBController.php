@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Http\Controllers\SheetDBController;
+use SheetDB\SheetDB;
 
 class SheetDBController extends Controller
 {
@@ -11,6 +12,30 @@ class SheetDBController extends Controller
     public function getfromSheet()
     {
 
-        return 3;
+        $sheetdb = new SheetDB('x2ucdyu6z03a7');
+        return view('pages/dashboard-tambah5', [
+            // Specify the base layout.
+            // Eg: 'side-menu', 'simple-menu', 'top-menu', 'login'
+            // The default value is 'side-menu'
+
+            // 'layout' => 'side-menu'
+        ]);
+        // dd($sheetdb->get());
+    }
+
+    public function submit_form(Request $request)
+    {
+
+        $sheetdb = new SheetDB('x2ucdyu6z03a7');
+        
+        return view('pages/dashboard-tambah5', [
+            // Specify the base layout.
+            // Eg: 'side-menu', 'simple-menu', 'top-menu', 'login'
+            // The default value is 'side-menu'
+
+            // 'layout' => 'side-menu'
+        ]);
+        
+        // dd($sheetdb->get());
     }
 }

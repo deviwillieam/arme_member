@@ -4038,6 +4038,8 @@ return array(
     'SebastianBergmann\\Type\\UnknownType' => $vendorDir . '/sebastian/type/src/type/UnknownType.php',
     'SebastianBergmann\\Type\\VoidType' => $vendorDir . '/sebastian/type/src/type/VoidType.php',
     'SebastianBergmann\\Version' => $vendorDir . '/sebastian/version/src/Version.php',
+    'SheetDB\\Connection' => $vendorDir . '/sheetdb/sheetdb-php/src/Connection.php',
+    'SheetDB\\SheetDB' => $vendorDir . '/sheetdb/sheetdb-php/src/SheetDB.php',
     'Spatie\\Backtrace\\Backtrace' => $vendorDir . '/spatie/backtrace/src/Backtrace.php',
     'Spatie\\Backtrace\\CodeSnippet' => $vendorDir . '/spatie/backtrace/src/CodeSnippet.php',
     'Spatie\\Backtrace\\File' => $vendorDir . '/spatie/backtrace/src/File.php',

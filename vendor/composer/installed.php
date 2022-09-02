@@ -5,7 +5,7 @@
         'type' => 'project',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
-        'reference' => '4e2b3a236df5076cce771e7a404f2f902dd6f560',
+        'reference' => '8433daffc2efef02625a09f56650d569f814f181',
         'name' => 'laravel/laravel',
         'dev' => true,
     ),
@@ -388,7 +388,7 @@
             'type' => 'project',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
-            'reference' => '4e2b3a236df5076cce771e7a404f2f902dd6f560',
+            'reference' => '8433daffc2efef02625a09f56650d569f814f181',
             'dev_requirement' => false,
         ),
         'laravel/sail' => array(
@@ -922,6 +922,15 @@
             'aliases' => array(),
             'reference' => 'c6c1022351a901512170118436c764e473f6de8c',
             'dev_requirement' => true,
+        ),
+        'sheetdb/sheetdb-php' => array(
+            'pretty_version' => '1.0.3',
+            'version' => '1.0.3.0',
+            'type' => 'library',
+            'install_path' => __DIR__ . '/../sheetdb/sheetdb-php',
+            'aliases' => array(),
+            'reference' => '1cc8d76e6377adcce71f8c58f3de1f2e3a146e8d',
+            'dev_requirement' => false,
         ),
         'spatie/backtrace' => array(
             'pretty_version' => '1.2.1',
