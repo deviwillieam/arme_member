@@ -38,4 +38,8 @@ class SheetDBController extends Controller
         
         // dd($sheetdb->get());
     }
+
+    public function raw_data(){
+        return view ('pages/dashboard-raw-data');
+    }
 }
