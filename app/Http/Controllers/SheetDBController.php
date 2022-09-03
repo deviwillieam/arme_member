@@ -42,4 +42,8 @@ class SheetDBController extends Controller
     public function raw_data(){
         return view ('pages/dashboard-raw-data');
     }
+
+    public function form_luar(){
+        return view ('pages/dashboard_form');
+    }
 }

@@ -1,38 +1,7 @@
 @extends('../layout/' . $layout)
-    
-   @section('subhead')
-       <title>Tambah Data</title>
-   @endsection
-    
-   @section('subcontent')
-   <!-- 
-   9  <style>.embed-container {
-  10 position: relative;
-  11 padding-bottom: 70.75%;
-  12 height: 0;
-  13 overflow: hidden;
-  14 }
-  15 .embed-container iframe {
-  16 position: absolute;
-  17 top:0;
-  18 left: 0;
-  19 width: 100%;
-  20 height: 100%;
-  21 }</style>
-  22 
-  23 <script>
-  24    setTimeout(function () {
-  25    var iframe = document.getElementById('yourIFrameId');
-  26    var url = iframe.src;
-  27    iframe.src = url;
-  28 }, 60 * 1000);
-  29 </script>
-  30  <div class="embed-container">
-  31 <iframe src="https://app.powerbi.com/view?r=eyJrIjoiM2M1NmMyOTQtOGE1ZS00MjE4LWEwNzUtN2MyZWE4NWFiZjcwIiwidCI6IjBlMGRiMmFkLWM0MTYtNDdjNy04OGVjLWNlYWM0ZWU3Njc2NyIsImMiOjEwfQ%3D%3D" frameborder="0" allowfullscreen="" webkitallowfullscreen="true" mozallowfullscreen="true" oallowfullscreen="true" msallowfullscreen="true"></iframe>
-  32 </div> -->
 
-  <!-- The text field -->
-  <script>
+@section('content')
+<script>
     function myFunction() {
   /* Get the text field */
   var copyText = document.getElementById("myInput");
@@ -50,6 +19,12 @@
     </script>
 
 <style>
+
+   html {
+    --tw-bg-opacity: 1;
+    background-image: url("https://wallpaper.dog/large/17056590.jpg ")
+}
+   
   .d-none{
     display: none;
   }
@@ -87,10 +62,11 @@
    </marquee>
 
    <input type="text" value="login.armestudio.co.id/form_share" id="myInput">
+   
 
 <!-- The button used to copy the text -->
 <button id="btn-login" class="btn btn-danger py-3 "  onclick="myFunction()">Copy form link</button>
-<button id="btn-login" class="btn btn-danger py-3 "  onclick=" window.open('raw-data', '_blank'); return false;">Lihat Raw Data</button>
+<!-- <button id="btn-login" class="btn btn-danger py-3 "  onclick=" window.open('raw-data', '_blank'); return false;">Lihat Raw Data</button> -->
 
     <br>
     <br>
@@ -255,8 +231,4 @@ document.getElementById("demo").innerHTML = d;
 document.getElementById("demo").value = d;
 }
 </script>
-
-  
-  
-  
-      @endsection
+@endsection
