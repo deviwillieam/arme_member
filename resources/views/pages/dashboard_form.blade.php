@@ -77,12 +77,12 @@
 
       
       <div class="container" style="
-    width: 60%;
+    width: 80%;
     display: block;
-    margin-left: 30%;
+    margin-left: 10%;
     margin-right: 10%;
-    max-width: 100%;
-    text-align: center;
+    max-width: 80%;
+    text-align: left;
 ">
     <div class="row">
         <div class="col-md-4 col-md-offset-6">
