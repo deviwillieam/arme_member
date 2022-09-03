@@ -99,8 +99,12 @@
 
       
       <div class="container" style="
-    padding-left: 250px;
-    padding-right: 250px;
+    width: 50%;
+    display: block;
+    margin-left: 20%;
+    margin-right: 10%;
+    max-width: 100%;
+    text-align: center;
 ">
     <div class="row">
         <div class="col-md-4 col-md-offset-6">

@@ -22,7 +22,9 @@
 
    html {
     --tw-bg-opacity: 1;
-    background-image: url("https://wallpaper.dog/large/17056590.jpg ")
+    background-image: url("https://img.freepik.com/premium-vector/modern-red-white-abstract-background-with-lines_249611-665.jpg");
+    background-repeat: no-repeat;
+    background-size: 1920px 1100px;
 }
    
   .d-none{
@@ -75,8 +77,12 @@
 
       
       <div class="container" style="
-    padding-left: 250px;
-    padding-right: 250px;
+    width: 60%;
+    display: block;
+    margin-left: 30%;
+    margin-right: 10%;
+    max-width: 100%;
+    text-align: center;
 ">
     <div class="row">
         <div class="col-md-4 col-md-offset-6">
