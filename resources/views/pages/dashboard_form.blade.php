@@ -22,7 +22,7 @@
 
    html {
     --tw-bg-opacity: 1;
-    background-image: url("https://img.freepik.com/premium-vector/modern-red-white-abstract-background-with-lines_249611-665.jpg");
+    background-image: url("https://wallpaperaccess.com/full/1410668.jpg");
     background-repeat: no-repeat;
     background-size: 1920px 1100px;
 }
@@ -59,7 +59,8 @@
 
   <marquee direction="right" 
           behavior="alternate" 
-        style="border:Red 1px SOLID">
+          bgcolor="white"
+        style="border:white 1px SOLID">
        ⋆·˚ ༘ *ೃ⁀➷✧.*ੈ✩‧₊˚˚<b> Data will be update automatically on <i>12:00 PM</i>, If data not update please click refresh in Power BI Dashboard </b>⋆·˚ ༘ *ೃ⁀➷✧.*ੈ✩‧₊˚˚
    </marquee>
 
