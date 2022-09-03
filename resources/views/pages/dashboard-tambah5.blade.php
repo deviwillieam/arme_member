@@ -247,7 +247,10 @@
   
 <script>
   function getDate() {
- const d = new Date();
+    var now = new Date();
+       d= ((now.getMonth() + 1) + '/' + (now.getDate()) + '/' + now.getFullYear() + " " + now.getHours() + ':'
+                     + ((now.getMinutes() < 10) ? ("0" + now.getMinutes()) : (now.getMinutes())) + ':' + ((now.getSeconds() < 10) ? ("0" + now
+                     .getSeconds()) : (now.getSeconds())));
 document.getElementById("demo").innerHTML = d;
 document.getElementById("demo").value = d;
 }
