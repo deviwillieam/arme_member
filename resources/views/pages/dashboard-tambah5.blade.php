@@ -199,9 +199,9 @@
   <div id="success-notification-content" class="toastify-content hidden flex">
     <i class="text-success" data-lucide="check-circle"></i>
     <div class="ml-4 mr-4">
-        <div class="font-medium">Data berhasil ditambahkan!</div>
+        <div class="font-medium">Data sudah di check</div>
         <div class="text-slate-500 mt-1">
-            Terimakasih!
+            Sila tekan semula butang submit
         </div>
     </div>
 </div>
