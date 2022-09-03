@@ -170,7 +170,9 @@
                                             <label for="regular-form-1" class="form-label w-full flex flex-col sm:flex-row">Alasan tidak menyokong Parti Bersatu</label>
                                             <input id="regular-form-1" name="data[Beri Alasan]" type="text" class="form-control" placeholder="Input text">
                                         </div><br>
+                                        <div class="col text-center">
                                         <button type="submit" onclick="getDate()" class="btn btn-primary mt-5">Submit</button>
+                                    </div>
                                       </form>
                                     
                                 
