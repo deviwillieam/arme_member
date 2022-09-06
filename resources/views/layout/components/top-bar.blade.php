@@ -96,7 +96,7 @@
     <!-- BEGIN: Account Menu -->
     <div class="intro-x dropdown w-8 h-8">
         <div class="dropdown-toggle w-8 h-8 rounded-full overflow-hidden shadow-lg image-fit zoom-in" role="button" aria-expanded="false" data-tw-toggle="dropdown">
-            <img alt="Midone - HTML Admin Template" src="{{ asset('dist/images/' . $fakers[9]['photos'][0]) }}">
+            <img alt="Midone - HTML Admin Template" src="{{ asset('dist/images/profile-1.jpg') }}">
         </div>
         <div class="dropdown-menu w-56">
             <ul class="dropdown-content bg-primary text-white">
@@ -107,7 +107,7 @@
                 <li>
                     <hr class="dropdown-divider border-white/[0.08]">
                 </li>
-                <li>
+                <!-- <li>
                     <a href="" class="dropdown-item hover:bg-white/5">
                         <i data-lucide="user" class="w-4 h-4 mr-2"></i> Profile
                     </a>
@@ -122,10 +122,10 @@
                         <i data-lucide="lock" class="w-4 h-4 mr-2"></i> Reset Password
                     </a>
                 </li>
-                <li>
-                    <a href="{{route('iframe_edit')}}" class="dropdown-item hover:bg-white/5">
-                        <i data-lucide="inspect" class="w-4 h-4 mr-2"></i> Edit Analytics Menu
-                    </a>
+                <li> -->
+                <a href="{{route('iframe_edit')}}" class="dropdown-item hover:bg-white/5">
+                    <i data-lucide="inspect" class="w-4 h-4 mr-2"></i> Edit Analytics Menu
+                </a>
                 </li>
                 <li>
                     <hr class="dropdown-divider border-white/[0.08]">
