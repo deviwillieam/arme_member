@@ -83,7 +83,7 @@ class PageController extends Controller
     public function tambah3()
     {
         $users = DB::select('select * from form_edit');
-        return view('pages/dashboard-tambah3', ['users' => $users]);
+        return view(' pages/dashboard-tambah3', ['users' => $users]);
     }
 
     public function tambah4()
