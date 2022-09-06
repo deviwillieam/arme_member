@@ -2642,8 +2642,7 @@ select{
         }
 .nav.nav-boxed-tabs .nav-item .nav-link.active{
     --tw-bg-opacity: 1;
-    background-color: rgb(var(--color-primary) / var(--tw-bg-opacity));
-    font-weight: 500;
+    background-color: #e20010;
     --tw-text-opacity: 1;
     color: rgb(255 255 255 / var(--tw-text-opacity));
 }
