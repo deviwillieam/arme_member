@@ -29,6 +29,7 @@ class iFrameController extends Controller
         echo "Record inserted successfully.<br/>";
         echo '<a href = "iframe_edit">Click Here</a> to go back.';
     }
+    
 
     public function index()
     {
