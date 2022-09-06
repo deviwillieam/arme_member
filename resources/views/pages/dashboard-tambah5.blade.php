@@ -31,7 +31,7 @@
                                                     aria-controls="example-tab-4"
                                                     aria-selected="false"
                                                 >
-                                                    Example Tab 2
+                                                    Form Bantuan
                                                 </button>
                                             </li>
                                         </ul>
