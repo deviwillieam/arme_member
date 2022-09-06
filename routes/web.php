@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\iFrameController;
 use App\Http\Controllers\SheetDBController;
 use App\Http\Controllers\AuthController;
 use App\Http\Controllers\PageController;
@@ -33,6 +34,10 @@ Route::post('submit-forms', [SheetDBController::class, 'submit_form']);
 
 Route::middleware('auth')->group(function() {
     Route::get('logout', [AuthController::class, 'logout'])->name('logout');
+    Route::get('iframe_edit', [iFrameController::class, 'iframe_edit']);
+    Route::get('iframe_edit', [iFrameController::class, 'index'])->name('iframe_edit');
+    Route::post('/insertiframe',[iFrameController::class, 'insert_iframe'])->name('tambah_iframe');
+
     Route::controller(PageController::class)->group(function() {
 
         Route::get('/', 'dashboardOverview1')->name('dashboard-overview-1');
