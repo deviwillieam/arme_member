@@ -1,7 +1,7 @@
 @extends('../layout/' . $layout)
 
 @section('subhead')
-<title>Senarai Daftar Pemilih2</title>
+<title>Senarai Penerima Bantuan</title>
 @endsection
 
 
