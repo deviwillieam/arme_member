@@ -19,7 +19,7 @@ class PageController extends Controller
     public function dashboardOverview1()
     {
         $users = DB::select('select * from form_edit');
-        return view('pages/dashboard-tambah',['users'=>$users]);
+        return view('pages/dashboard-overview-1', ['users' => $users]);
     }
 
 
@@ -70,29 +70,29 @@ class PageController extends Controller
     public function tambah()
     {
         $users = DB::select('select * from form_edit');
-        return view('pages/dashboard-tambah',['users'=>$users]);
+        return view('pages/dashboard-tambah', ['users' => $users]);
     }
 
 
     public function tambah2()
     {
         $users = DB::select('select * from form_edit');
-        return view('pages/dashboard-tambah2',['users'=>$users]);
+        return view('pages/dashboard-tambah2', ['users' => $users]);
     }
 
     public function tambah3()
     {
         $users = DB::select('select * from form_edit');
-        return view('pages/dashboard-tambah3',['users'=>$users]);
+        return view('pages/dashboard-tambah3', ['users' => $users]);
     }
 
     public function tambah4()
     {
         $users = DB::select('select * from form_edit');
-        return view('pages/dashboard-tambah4',['users'=>$users]);
+        return view('pages/dashboard-tambah4', ['users' => $users]);
     }
 
-    
+
     public function tambah5()
     {
         return view('pages/dashboard-tambah5', [

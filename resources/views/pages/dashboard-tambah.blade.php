@@ -1,7 +1,7 @@
 @extends('../layout/' . $layout)
 
 @section('subhead')
-<title>Daftar Pemilih</title>
+<title>Dashboard </title>
 @endsection
 
 @section('subcontent')
@@ -154,6 +154,7 @@
     iframe.src = url;
   }, 60 * 1000);
 </script>
+
 @foreach ($users as $user)
 <!-- <td>{{ $user->daftar_pemilih }}</td> -->
 @endforeach
@@ -163,7 +164,7 @@
 <div class="embed-container">
   <div id="content">
     <div style="height:580px;width:960px">
-      <iframe width="1920" height="1080" src="{{ $user->daftar_pemilih }}" frameborder="0" height="100%" width="100%" style="position:absolute; clip:rect(0px,1920px,750px,0px);
+      <iframe width="1920" height="1080" src="{{$user->daftar_pemilih}}" frameborder="0" height="100%" width="100%" style="position:absolute; clip:rect(0px,1920px,750px,0px);
             bottom:-0px; allowFullScreen=" true"></iframe>
     </div>
   </div>
