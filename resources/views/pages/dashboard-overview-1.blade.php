@@ -151,13 +151,17 @@ height: 100%;
    iframe.src = url;
 }, 60 * 1000);
 </script>
+
+@foreach ($users as $user)
+<!-- <td>{{ $user->daftar_pemilih }}</td> -->
+@endforeach
  <!-- <div class="embed-container">
 <iframe src="https://app.powerbi.com/view?r=eyJrIjoiM2M1NmMyOTQtOGE1ZS00MjE4LWEwNzUtN2MyZWE4NWFiZjcwIiwidCI6IjBlMGRiMmFkLWM0MTYtNDdjNy04OGVjLWNlYWM0ZWU3Njc2NyIsImMiOjEwfQ%3D%3D" frameborder="0" allowfullscreen="" webkitallowfullscreen="true" mozallowfullscreen="true" oallowfullscreen="true" msallowfullscreen="true"></iframe>
 </div> -->
 <div class="embed-container">
 <div id="content">
     <div style="height:580px;width:960px">
-      <iframe width="1920" height="1080" src="https://app.powerbi.com/view?r=eyJrIjoiZjc1MzM2MTUtNDZjZi00YjgyLWFmOTEtYTY0ZGNiMzU3YThlIiwidCI6IjBlMGRiMmFkLWM0MTYtNDdjNy04OGVjLWNlYWM0ZWU3Njc2NyIsImMiOjEwfQ%3D%3D" frameborder="0" height="100%" width="100%" style="position:absolute; clip:rect(0px,1920px,750px,0px);
+      <iframe width="1920" height="1080" src="{{$user->dashboard}}" frameborder="0" height="100%" width="100%" style="position:absolute; clip:rect(0px,1920px,750px,0px);
             bottom:-0px; allowFullScreen="true" ></iframe>
    </div>
 </div>

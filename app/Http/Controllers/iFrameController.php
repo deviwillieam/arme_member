@@ -16,11 +16,13 @@ class iFrameController extends Controller
         }
         
     public function insert_iframe(Request $request){
+        
         $daftar_pemilih = $request->input('daftar_pemilih');
         $penerima_bantuan = $request->input('penerima_bantuan');
         $maklumat_pribadi = $request->input('maklumat_pribadi');
         $pusat_daerah = $request->input('pusat_daerah');
-        $data=array('daftar_pemilih'=>$daftar_pemilih,"penerima_bantuan"=>$penerima_bantuan,"maklumat_pribadi"=>$maklumat_pribadi,"pusat_daerah"=>$pusat_daerah);
+        $dashboard = $request->input('dashboard');
+        $data=array('daftar_pemilih'=>$daftar_pemilih,"penerima_bantuan"=>$penerima_bantuan,"maklumat_pribadi"=>$maklumat_pribadi,"pusat_daerah"=>$pusat_daerah,'dashboard'=>$dashboard);
         DB::table('form_edit')->insert($data);
         echo "Record inserted successfully.<br/>";
         echo '<a href = "iframe_edit">Click Here</a> to go back.';

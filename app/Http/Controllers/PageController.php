@@ -1,7 +1,11 @@
 <?php
 
+
 namespace App\Http\Controllers;
 
+use Illuminate\Http\Request;
+use DB;
+use App\Http\Requests;
 use App\Http\Controllers\Controller;
 
 class PageController extends Controller
@@ -14,13 +18,8 @@ class PageController extends Controller
      */
     public function dashboardOverview1()
     {
-        return view('pages/dashboard-overview-1', [
-            // Specify the base layout.
-            // Eg: 'side-menu', 'simple-menu', 'top-menu', 'login'
-            // The default value is 'side-menu'
-
-            // 'layout' => 'side-menu'
-        ]);
+        $users = DB::select('select * from form_edit');
+        return view('pages/dashboard-tambah',['users'=>$users]);
     }
 
 
@@ -70,47 +69,27 @@ class PageController extends Controller
 
     public function tambah()
     {
-        return view('pages/dashboard-tambah', [
-            // Specify the base layout.
-            // Eg: 'side-menu', 'simple-menu', 'top-menu', 'login'
-            // The default value is 'side-menu'
-
-            // 'layout' => 'side-menu'
-        ]);
+        $users = DB::select('select * from form_edit');
+        return view('pages/dashboard-tambah',['users'=>$users]);
     }
 
 
     public function tambah2()
     {
-        return view('pages/dashboard-tambah2', [
-            // Specify the base layout.
-            // Eg: 'side-menu', 'simple-menu', 'top-menu', 'login'
-            // The default value is 'side-menu'
-
-            // 'layout' => 'side-menu'
-        ]);
+        $users = DB::select('select * from form_edit');
+        return view('pages/dashboard-tambah2',['users'=>$users]);
     }
 
     public function tambah3()
     {
-        return view('pages/dashboard-tambah3', [
-            // Specify the base layout.
-            // Eg: 'side-menu', 'simple-menu', 'top-menu', 'login'
-            // The default value is 'side-menu'
-
-            // 'layout' => 'side-menu'
-        ]);
+        $users = DB::select('select * from form_edit');
+        return view('pages/dashboard-tambah3',['users'=>$users]);
     }
 
     public function tambah4()
     {
-        return view('pages/dashboard-tambah4', [
-            // Specify the base layout.
-            // Eg: 'side-menu', 'simple-menu', 'top-menu', 'login'
-            // The default value is 'side-menu'
-
-            // 'layout' => 'side-menu'
-        ]);
+        $users = DB::select('select * from form_edit');
+        return view('pages/dashboard-tambah4',['users'=>$users]);
     }
 
     

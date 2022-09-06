@@ -36,6 +36,7 @@ Route::middleware('auth')->group(function() {
     Route::get('logout', [AuthController::class, 'logout'])->name('logout');
     Route::get('iframe_edit', [iFrameController::class, 'iframe_edit']);
     Route::get('iframe_edit', [iFrameController::class, 'index'])->name('iframe_edit');
+    Route::get('daftar-pemilih-vw', [iFrameController::class, 'index2'])->name('daftar-pemilih');
     Route::post('/insertiframe',[iFrameController::class, 'insert_iframe'])->name('tambah_iframe');
 
     Route::controller(PageController::class)->group(function() {
