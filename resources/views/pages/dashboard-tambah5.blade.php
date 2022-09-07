@@ -24,7 +24,7 @@
         @include('pages.dashboard_form_pengundi')
     </div>
     <div id="example-tab-4" class="tab-pane leading-relaxed" role="tabpanel" aria-labelledby="example-4-tab">
-        Page2
+        @include('pages.dashboard_form_bantuan')
     </div>
 </div>
 
