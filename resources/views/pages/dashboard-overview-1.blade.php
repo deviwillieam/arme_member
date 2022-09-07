@@ -127,7 +127,9 @@
   }
 </style>
 
-
+@foreach ($users as $user)
+<!-- <td>{{ $user->daftar_pemilih }}</td> -->
+@endforeach
 
 
 <style>
@@ -169,9 +171,7 @@
   };
 </script>
 
-@foreach ($users as $user)
-<!-- <td>{{ $user->daftar_pemilih }}</td> -->
-@endforeach
+
 <!-- <div class="embed-container">
 <iframe src="https://app.powerbi.com/view?r=eyJrIjoiM2M1NmMyOTQtOGE1ZS00MjE4LWEwNzUtN2MyZWE4NWFiZjcwIiwidCI6IjBlMGRiMmFkLWM0MTYtNDdjNy04OGVjLWNlYWM0ZWU3Njc2NyIsImMiOjEwfQ%3D%3D" frameborder="0" allowfullscreen="" webkitallowfullscreen="true" mozallowfullscreen="true" oallowfullscreen="true" msallowfullscreen="true"></iframe>
 </div> -->
