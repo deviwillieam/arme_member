@@ -1,8 +1,8 @@
 <!-- The text field -->
 <script>
-  function myFunction() {
+  function myFunction2() {
     /* Get the text field */
-    var copyText = document.getElementById("myInput");
+    var copyText = document.getElementById("myInput2");
 
     /* Select the text field */
     copyText.select();
@@ -35,10 +35,10 @@
   ⋆·˚ ༘ *ೃ⁀➷✧.*ੈ✩‧₊˚˚<b> Data will be update automatically on <i>12:00 PM</i>, If data not update please click refresh in Power BI Dashboard </b>⋆·˚ ༘ *ೃ⁀➷✧.*ੈ✩‧₊˚˚
 </marquee>
 
-<input type="text" value="https://docs.google.com/forms/d/e/1FAIpQLSew95ByooknrRaCwVD5IUDJIhLwSJpSUUx8acciPqAGAGK0WQ/viewform" id="myInput">
+<input type="text" value="https://docs.google.com/forms/d/e/1FAIpQLSew95ByooknrRaCwVD5IUDJIhLwSJpSUUx8acciPqAGAGK0WQ/viewform" id="myInput2">
 
 <!-- The button used to copy the text -->
-<button id="btn-login" class="btn btn-danger py-3 " onclick="myFunction()">Copy form link</button>
+<button id="btn-login" class="btn btn-danger py-3 " onclick="myFunction2()">Copy form link</button>
 <button id="btn-login" class="btn btn-danger py-3 " onclick=" window.open('https://docs.google.com/spreadsheets/d/1pwykjmaEBEKK_wDvNNIKQWxw7kxx1bNde3e0P0bSu80/edit?usp=sharing', '_blank'); return false;">Lihat Raw Data</button>
 
 <br></br>
