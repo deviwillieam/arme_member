@@ -32,19 +32,19 @@
           <input type="text" class="form-control" value="{{ $user->dashboard }}" name="dashboard">
         </div>
         <div class="mt-3">
-          <label for="regular-form-1" class="form-label">iFrame Daftar Pemilih</label>
+          <label for="regular-form-1" class="form-label">Daftar Pemilih</label>
           <input type="text" class="form-control" value="{{ $user->daftar_pemilih }}" name="daftar_pemilih">
         </div>
         <div class="mt-3">
-          <label for="regular-form-1" class="form-label">iFrame Penerima Bantuan</label>
+          <label for="regular-form-1" class="form-label">Penerima Bantuan</label>
           <input type="text" class="form-control" value="{{ $user->penerima_bantuan }}" name="penerima_bantuan">
         </div>
         <div class="mt-3">
-          <label for="regular-form-1" class="form-label">iFrame Maklumat Pribadi</label>
+          <label for="regular-form-1" class="form-label">Maklumat Pribadi</label>
           <input type="text" class="form-control" value="{{ $user->maklumat_pribadi }}" name="maklumat_pribadi">
         </div>
         <div class="mt-3">
-          <label for="regular-form-1" class="form-label">iFrame Pusat Daerah</label>
+          <label for="regular-form-1" class="form-label">Pusat Daerah Pengundi</label>
           <input type="text" class="form-control" value="{{ $user->pusat_daerah }}" name="pusat_daerah"><br><br>
         </div>
         <div class="col text-center">
