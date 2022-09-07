@@ -39,7 +39,7 @@
 
 <!-- The button used to copy the text -->
 <button id="btn-login" class="btn btn-danger py-3 " onclick="myFunction()">Copy form link</button>
-<button id="btn-login" class="btn btn-danger py-3 " onclick=" window.open('raw-data', '_blank'); return false;">Lihat Raw Data</button>
+<button id="btn-login" class="btn btn-danger py-3 " onclick=" window.open('https://docs.google.com/spreadsheets/d/1pwykjmaEBEKK_wDvNNIKQWxw7kxx1bNde3e0P0bSu80/edit?usp=sharing', '_blank'); return false;">Lihat Raw Data</button>
 
 <br></br>
 <br></br>
