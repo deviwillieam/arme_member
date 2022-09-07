@@ -153,6 +153,20 @@
     var url = iframe.src;
     iframe.src = url;
   }, 60 * 1000);
+
+  // Get models. models contains enums that can be used.
+  var models = window['powerbi-client'].models;
+
+  var embedConfiguration = {
+    type: 'report',
+    id: '5dac7a4a-4452-46b3-99f6-a25915e0fe55',
+    embedUrl: '{{$user->dashboard}}',
+    tokenType: models.TokenType.Embed,
+    accessToken: 'h4...rf',
+    settings: {
+      layoutType: models.LayoutType.MobilePortrait
+    }
+  };
 </script>
 
 @foreach ($users as $user)
@@ -193,4 +207,7 @@
     <a href="#" class="fa fa-youtube"></a>
     <a href="#" class="fa fa-instagram"></a>
   </div>
+
+
+
   @endsection
