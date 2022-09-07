@@ -153,16 +153,6 @@
     var url = iframe.src;
     iframe.src = url;
   }, 60 * 1000);
-
-  // Get models. models contains enums that can be used.
-  var config = {
-
-    settings: {
-      filterPaneEnabled: true,
-      navContentPaneEnabled: true,
-      layoutType: models.LayoutType.MobilePortrait
-    }
-  };
 </script>
 
 @foreach ($users as $user)
