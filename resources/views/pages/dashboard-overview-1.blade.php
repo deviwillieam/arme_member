@@ -155,15 +155,11 @@
   }, 60 * 1000);
 
   // Get models. models contains enums that can be used.
-  var models = window['powerbi-client'].models;
+  var config = {
 
-  var embedConfiguration = {
-    type: 'report',
-    id: '5dac7a4a-4452-46b3-99f6-a25915e0fe55',
-    embedUrl: 'https://app.powerbi.com/view?r=eyJrIjoiZjc1MzM2MTUtNDZjZi00YjgyLWFmOTEtYTY0ZGNiMzU3YThlIiwidCI6IjBlMGRiMmFkLWM0MTYtNDdjNy04OGVjLWNlYWM0ZWU3Njc2NyIsImMiOjEwfQ%3D%3D',
-    tokenType: models.TokenType.Embed,
-    accessToken: 'h4...rf',
     settings: {
+      filterPaneEnabled: true,
+      navContentPaneEnabled: true,
       layoutType: models.LayoutType.MobilePortrait
     }
   };
