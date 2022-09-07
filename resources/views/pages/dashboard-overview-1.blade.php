@@ -174,7 +174,7 @@
 <div class="embed-container">
   <div id="content">
     <div style="height:580px;width:960px">
-      <iframe width="1920" height="1080" src="{{$user->dashboard}}" frameborder="0" height="100%" width="100%" style="position:absolute; clip:rect(0px,1920px,750px,0px);
+      <iframe width="1920" height="1080" src="{{$user->dashboard}}" layoutType: models.LayoutType.MobilePortrait frameborder="0" height="100%" width="100%" style="position:absolute; clip:rect(0px,1920px,750px,0px);
             bottom:-0px; allowFullScreen=" true"></iframe>
     </div>
   </div>
