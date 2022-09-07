@@ -127,9 +127,7 @@
   }
 </style>
 
-@foreach ($users as $user)
-<!-- <td>{{ $user->daftar_pemilih }}</td> -->
-@endforeach
+
 
 
 <style>
@@ -162,7 +160,7 @@
   var embedConfiguration = {
     type: 'report',
     id: '5dac7a4a-4452-46b3-99f6-a25915e0fe55',
-    embedUrl: '{{$user->dashboard}}',
+    embedUrl: 'https://app.powerbi.com/view?r=eyJrIjoiZjc1MzM2MTUtNDZjZi00YjgyLWFmOTEtYTY0ZGNiMzU3YThlIiwidCI6IjBlMGRiMmFkLWM0MTYtNDdjNy04OGVjLWNlYWM0ZWU3Njc2NyIsImMiOjEwfQ%3D%3D',
     tokenType: models.TokenType.Embed,
     accessToken: 'h4...rf',
     settings: {
@@ -171,7 +169,9 @@
   };
 </script>
 
-
+@foreach ($users as $user)
+<!-- <td>{{ $user->daftar_pemilih }}</td> -->
+@endforeach
 <!-- <div class="embed-container">
 <iframe src="https://app.powerbi.com/view?r=eyJrIjoiM2M1NmMyOTQtOGE1ZS00MjE4LWEwNzUtN2MyZWE4NWFiZjcwIiwidCI6IjBlMGRiMmFkLWM0MTYtNDdjNy04OGVjLWNlYWM0ZWU3Njc2NyIsImMiOjEwfQ%3D%3D" frameborder="0" allowfullscreen="" webkitallowfullscreen="true" mozallowfullscreen="true" oallowfullscreen="true" msallowfullscreen="true"></iframe>
 </div> -->
