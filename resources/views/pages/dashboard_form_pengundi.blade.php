@@ -84,7 +84,7 @@
 
         <div class="intro-y box">
           <div class="flex flex-col sm:flex-row items-center p-5 border-b border-slate-200/60 dark:border-darkmode-400">
-            <h2 class="font-medium text-base mr-auto">Form</h2>
+            <h2 class="font-medium text-base mr-auto">Form Data Bantuan</h2>
           </div>
           <div id="input" class="p-5">
             <form onsubmit="return validation();" class="validate-form" name="form" id="sheetdb-form" method="post" action="https://sheetdb.io/api/v1/x2ucdyu6z03a7">
