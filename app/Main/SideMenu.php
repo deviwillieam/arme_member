@@ -20,11 +20,11 @@ class SideMenu
                 // 'sub_menu' => [
                 //     'dashboard-overview-1' => [
                 //         'icon' => '',
-                        'route_name' => 'dashboard-overview-1',
-                        'params' => [
-                            'layout' => 'side-menu',
-                        ],
-                        'title' => 'Dashboard'
+                'route_name' => 'dashboard-overview-1',
+                'params' => [
+                    'layout' => 'side-menu',
+                ],
+                'title' => 'Dashboard'
                 //     ],
                 //     'dashboard-overview-2' => [
                 //         'icon' => '',
@@ -61,7 +61,7 @@ class SideMenu
                 ],
                 'title' => 'Data Pilihan Raya Umum'
             ],
-            
+
 
             //  'data_pru' => [
             //     'icon' => 'layers',
@@ -102,7 +102,7 @@ class SideMenu
             //         ]
             //         ],
 
-            
+
 
             'tambah' => [
                 'icon' => 'users',
@@ -140,39 +140,39 @@ class SideMenu
                 'title' => 'Analisis Mengikut Pusat Daerah Pengundi'
             ],
 
+            // 'tambah5' => [
+            //     'icon' => 'file-plus',
+            //     'route_name' => 'dashboard-tambah5',
+            //     'params' => [
+            //         'layout' => 'side-menu'
+            //     ],
+            //     'title' => 'Tambah Data'
+            // ],
+
+
             'tambah5' => [
                 'icon' => 'file-plus',
-                'route_name' => 'dashboard-tambah5',
-                'params' => [
-                    'layout' => 'side-menu'
-                ],
-                'title' => 'Tambah Data'
+                'title' => 'Tambah Data',
+                'sub_menu' => [
+                    'dashboard-tambah5' => [
+                        'icon' => '',
+                        'route_name' => 'dashboard-tambah5',
+                        'params' => [
+                            'layout' => 'side-menu',
+                        ],
+                        'title' => 'Data Pengundi'
+                    ],
+                    'dashboard-tambah6' => [
+                        'icon' => '',
+                        'route_name' => 'dashboard-tambah6',
+                        'params' => [
+                            'layout' => 'side-menu',
+                        ],
+                        'title' => 'Data Bantuan'
+                    ]
+                ]
             ],
 
-
-            // 'tambah' => [
-            //     'icon' => 'home',
-            //     'title' => 'Statistic',
-            //     'sub_menu' => [
-            //         'dashboard-tambah' => [
-            //             'icon' => '',
-            //             'route_name' => 'dashboard-tambah',
-            //             'params' => [
-            //                 'layout' => 'side-menu',
-            //             ],
-            //             'title' => 'Statistik'
-            //         ],
-            //         'categories' => [
-            //             'icon' => '',
-            //             'route_name' => 'categories',
-            //             'params' => [
-            //                 'layout' => 'side-menu',
-            //             ],
-            //             'title' => 'test-menu'
-            //         ]
-            //         ]
-            //         ],
-                 
             // 'menu-layout' => [
             //     'icon' => 'box',
             //     'title' => 'Menu Layout',

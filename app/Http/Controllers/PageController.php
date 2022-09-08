@@ -104,6 +104,17 @@ class PageController extends Controller
         ]);
     }
 
+    public function tambah6()
+    {
+        return view('pages/dashboard-tambah6', [
+            // Specify the base layout.
+            // Eg: 'side-menu', 'simple-menu', 'top-menu', 'login'
+            // The default value is 'side-menu'
+
+            // 'layout' => 'side-menu'
+        ]);
+    }
+
 
     /**
      * Show specified view.
@@ -786,6 +797,12 @@ class PageController extends Controller
     {
         return view('pages/tom-select');
     }
+
+    public function terimakasih()
+    {
+        return view('pages/thankyou');
+    }
+
 
     /**
      * Show specified view.

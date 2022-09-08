@@ -6,6 +6,9 @@
 
 @section('subcontent')
 
+
+<!-- <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSew95ByooknrRaCwVD5IUDJIhLwSJpSUUx8acciPqAGAGK0WQ/viewform?embedded=true" width="100%" height="1818" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe> -->
+
 <!-- The text field -->
 <script>
     function myFunction() {
@@ -60,16 +63,14 @@
     ⋆·˚ ༘ *ೃ⁀➷✧.*ੈ✩‧₊˚˚<b> Data will be update automatically on <i>12:00 PM</i>, If data not update please click refresh in Power BI Dashboard </b>⋆·˚ ༘ *ೃ⁀➷✧.*ੈ✩‧₊˚˚
 </marquee>
 
-<input type="text" value="login.armestudio.co.id/form_share" id="myInput">
+<input type="text" value="login.armestudio.co.id/form_share2" id="myInput">
 
 <!-- The button used to copy the text -->
 <button id="btn-login" class="btn btn-danger py-3 " onclick="myFunction()">Copy form link</button>
-<button id="btn-login" class="btn btn-danger py-3 " onclick=" window.open('raw-data', '_blank'); return false;">Lihat Raw Data</button>
+<button id="btn-login" class="btn btn-danger py-3 " onclick=" window.open('raw-data2', '_blank'); return false;">Lihat Raw Data</button>
 
 <br></br>
 <br></br>
-<!-- <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdfRG3KN1TwwhHthBei7PAX5DgLIg9nHUXuXOyio5T8YPt0sw/viewform?embedded=true" width="100%" height="1818" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe> -->
-
 
 
 <div class="container" style="
@@ -92,10 +93,10 @@
 
                 <div class="intro-y box">
                     <div class="flex flex-col sm:flex-row items-center p-5 border-b border-slate-200/60 dark:border-darkmode-400">
-                        <h2 class="font-medium text-base mr-auto">Form Data Pengundi</h2>
+                        <h2 class="font-medium text-base mr-auto">Form Bantuan Dana</h2>
                     </div>
                     <div id="input" class="p-5">
-                        <form onsubmit="return validation();" class="validate-form" name="form" id="sheetdb-form" method="post" action="https://sheetdb.io/api/v1/x2ucdyu6z03a7">
+                        <form onsubmit="return validation();" class="validate-form" name="form" id="sheetdb-form2" method="post" action="https://sheetdb.io/api/v1/5f0n7gyfuluog">
                             <div class="input-form">
                                 <input id="demo" type="hidden" name="data[Timestamp]" value="d">
 
@@ -118,52 +119,13 @@
                                     <textarea id="validation-form-6" name="data[Alamat]" type="text" class="form-control" placeholder="Alamat" required></textarea>
                                 </div><br>
                                 <div>
-                                    <label for="regular-form-1" class="form-label w-full flex flex-col sm:flex-row">DUN *</label>
-                                    <select class="form-select mt-2 sm:mr-2" name="data[DUN]" aria-label="Default select example" required>
+                                    <label for="regular-form-1" class="form-label w-full flex flex-col sm:flex-row">Pilih Bantuan *</label>
+                                    <select class="form-select mt-2 sm:mr-2" name="data[Pilih Bantuan]" aria-label="Default select example" required>
                                         <option value="">Pilih</option>
-                                        <option>A</option>
-                                        <option>B</option>
-                                        <option>C</option>
-                                        <option>D</option>
-                                        <option>E</option>
-                                        <option>F</option>
+                                        <option>Bantuan Sara Hidup (BSH)</option>
+                                        <option>Bantuan Ibu Tunggal</option>
+                                        <option>Bantuan Persekolahan</option>
                                     </select>
-                                </div><br>
-                                <div>
-                                    <label for="regular-form-1" class="form-label w-full flex flex-col sm:flex-row">Pusat Daerah Mengundi *</label>
-                                    <select class="form-select mt-2 sm:mr-2" name="data[Pusat Daerah Mengundi]" aria-label="Default select example" required>
-                                        <option value="">Pilih</option>
-                                        <option>PDM1 </option>
-                                        <option>PDM2 </option>
-                                        <option>PDM3 </option>
-                                    </select>
-                                </div><br>
-                                <div>
-                                    <label for="regular-form-1" class="form-label w-full flex flex-col sm:flex-row">Culaan *</label>
-                                    <select class="form-select mt-2 sm:mr-2" name="data[Culaan]" aria-label="Default select example" required>
-                                        <option value="">Pilih</option>
-                                        <option>Candidate A </option>
-                                        <option>Candidate B</option>
-                                        <option>Candidate C</option>
-                                        <option>Candidate D</option>
-                                        <option>Tidak Tahu</option>
-                                    </select>
-                                </div><br>
-                                <div>
-                                    <label for="regular-form-1" class="form-label w-full flex flex-col sm:flex-row">Sokongan *</label>
-                                    <select id="sokongan" name="data[Sokongan]" class="form-select mt-2 sm:mr-2" aria-label="Default select example" onchange="checkAnswer(this)" required>
-                                        <option value="">Pilih</option>
-                                        <option value="Menyokong Parti Bersatu">Menyokong Parti Bersatu</option>
-                                        <option value="Tidak Menyokong">Tidak Menyokong</option>
-                                    </select>
-                                </div><br>
-                                <div id="code2" class="d-none2">
-                                    <label for="regular-form-1" class="form-label w-full flex flex-col sm:flex-row">Harapan untuk kemajuan bangsa dan negara melaui Parti Bersatu</label>
-                                    <input id="regular-form-1" name="data[Isi Harapan ]" type="text" class="form-control" placeholder="Input text">
-                                </div><br>
-                                <div id="code" class="d-none">
-                                    <label for="regular-form-1" class="form-label w-full flex flex-col sm:flex-row">Alasan tidak menyokong Parti Bersatu</label>
-                                    <input id="regular-form-1" name="data[Beri Alasan]" type="text" class="form-control" placeholder="Input text">
                                 </div><br>
                                 <div class="col text-center">
                                     <button type="submit" onclick="getDate()" class="btn btn-danger py-3 ">Submit</button>
@@ -179,6 +141,7 @@
         </div>
     </div>
 </div>
+
 
 <div id="success-notification-content" class="toastify-content hidden flex">
     <i class="text-success" data-lucide="file-check-2"></i>
@@ -204,19 +167,19 @@
 
 <script>
     function validation() {
-        let check = document.forms["form"]["data[Nama Penuh]", "data[Alamat]", "data[No Handphone]", "data[sokongan]", "data[DUN]", "data[Pusat Daerah Mengundi]", "data[Culaan]", "data[Sokongan]"].value;
+        let check = document.forms["form"]["data[Nama Penuh]", "data[Alamat]", "data[No Handphone]", "data[sokongan]", "data[Pilih Bantuan]"].value;
         let x = document.forms["form"]["data[No Kad Pengenalan]"].value;
         if (check == "") {
             alert("Maklumat Tidak Lengkap");
         } else if (x.length < 10) {
             alert("Kad pengenalan paling sedikit 10 angka");
         } else {
-            var form = document.getElementById('sheetdb-form');
+            var form = document.getElementById('sheetdb-form2');
             form.addEventListener("submit", e => {
                 e.preventDefault();
                 fetch(form.action, {
                     method: "POST",
-                    body: new FormData(document.getElementById("sheetdb-form")),
+                    body: new FormData(document.getElementById("sheetdb-form2")),
                 }).then(
                     response => response.json()
                 ).then((html) => {

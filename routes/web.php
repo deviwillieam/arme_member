@@ -22,7 +22,7 @@ use App\Http\Controllers\ColorSchemeController;
 Route::get('dark-mode-switcher', [DarkModeController::class, 'switch'])->name('dark-mode-switcher');
 Route::get('color-scheme-switcher/{color_scheme}', [ColorSchemeController::class, 'switch'])->name('color-scheme-switcher');
 
-Route::controller(AuthController::class)->middleware('loggedin')->group(function() {
+Route::controller(AuthController::class)->middleware('loggedin')->group(function () {
     Route::get('login', 'loginView')->name('login.index');
     Route::post('login', 'login')->name('login.check');
 });
@@ -31,16 +31,17 @@ Route::get('forms', [SheetDBController::class, 'getfromSheet']);
 Route::get('raw-data', [SheetDBController::class, 'raw_data']);
 Route::get('raw-data2', [SheetDBController::class, 'raw_data2']);
 Route::get('form_share', [SheetDBController::class, 'form_luar']);
+Route::get('form_share2', [SheetDBController::class, 'form_luar2']);
 Route::post('submit-forms', [SheetDBController::class, 'submit_form']);
 
-Route::middleware('auth')->group(function() {
+Route::middleware('auth')->group(function () {
     Route::get('logout', [AuthController::class, 'logout'])->name('logout');
     Route::get('iframe_edit', [iFrameController::class, 'iframe_edit']);
     Route::get('iframe_edit', [iFrameController::class, 'index'])->name('iframe_edit');
     Route::get('daftar-pemilih-vw', [iFrameController::class, 'index2'])->name('daftar-pemilih');
-    Route::post('/insertiframe',[iFrameController::class, 'insert_iframe'])->name('tambah_iframe');
+    Route::post('/insertiframe', [iFrameController::class, 'insert_iframe'])->name('tambah_iframe');
 
-    Route::controller(PageController::class)->group(function() {
+    Route::controller(PageController::class)->group(function () {
 
         Route::get('/', 'dashboardOverview1')->name('dashboard-overview-1');
         Route::get('dashboard-overview-2-page', 'dashboardOverview2')->name('dashboard-overview-2');
@@ -55,6 +56,8 @@ Route::middleware('auth')->group(function() {
         Route::get('maklumat-pribadi-pengundi', 'tambah3')->name('dashboard-tambah3');
         Route::get('pusat-daerahpengundi', 'tambah4')->name('dashboard-tambah4');
         Route::get('form', 'tambah5')->name('dashboard-tambah5');
+        Route::get('form2', 'tambah6')->name('dashboard-tambah6');
+        Route::get('thankyou', 'terimakasih')->name('thankyou');
 
         Route::get('categories-page', 'categories')->name('categories');
         Route::get('add-product-page', 'addProduct')->name('add-product');
